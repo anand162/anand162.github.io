@@ -1,133 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<style type="text/css">
-		*{
-			box-sizing: border-box;
-		}
-		body
-		{
-			background-color: olive;
-		}
-		h1{
-			text-align: center;
-		}
-		div{
-			font-family: Helvetica;
-			border: 1px solid black;
-			color: rgb(255, 255, 255);
-			float: left;
-			margin: 20px;
-		} 
-		#p1{
-			background-color: rgb(100,200,125);
-			position: relative;
-			text-align: center;
-		}
-		#p2{
-			background-color: rgb(175,150,130);
-			position: relative;
-			text-align: center;
-		}
-		#p3
-		{
-			background-color: rgb(120,115,117);
-			position: relative;
-			text-align: center;
-		} 
-		#ber
-		{
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			border: 1px solid black;
-			width: 100px;
-			height: 25px;
-			background-color: red;
-		}
-		#par{
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			border: 1px solid black;
-			width: 100px;
-			height: 25px;
-			background-color: green;
-		}
-		#tok{
-			background-color: gray;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			border: 1px solid black;
-			width: 100px;
-			height: 25px;
-		}
-
-		@media(min-width: 1200px){
-			.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
-				float: left;
-				border: 1px solid black;
-			}
-	.col-lg-1 {width: 8.33%;}
-.col-lg-2 {width: 16.66%;}
-.col-lg-3 {width: 25%;}
-.col-lg-4 {width: 30%;}
-.col-lg-5 {width: 41.66%;}
-.col-lg-6 {width: 50%;}
-.col-lg-7 {width: 58.33%;}
-.col-lg-8 {width: 66.66%;}
-.col-lg-9 {width: 75%;}
-.col-lg-10 {width: 83.33%;}
-.col-lg-11 {width: 91.66%;}
-.col-lg-12 {width: 100%;}
-		}
-		@media(min-width: 992px) and (max-width: 1199px)
-		{
-			.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
-				float: left;
-				border: 1px solid black;
-			}
-					.col-md-1 {width: 8.33%;}
-.col-md-2 {width: 16.66%;}
-.col-md-3 {width: 25%;}
-.col-md-4 {width: 33.33%;}
-.col-md-5 {width: 41.66%;}
-.col-md-6 {width: 45%;}
-.col-md-7 {width: 58.33%;}
-.col-md-8 {width: 66.66%;}
-.col-md-9 {width: 75%;}
-.col-md-10 {width: 83.33%;}
-.col-md-11 {width: 91.66%;}
-.col-md-12 {width: 94%;}
-		}
-		@media(max-width: 991px){
-			.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{
-				float: left;
-				border: 1px solid black;
-			}
-								.col-sm-1 {width: 8.33%;}
-.col-sm-2 {width: 16.66%;}
-.col-sm-3 {width: 25%;}
-.col-sm-4 {width: 33.33%;}
-.col-sm-5 {width: 41.66%;}
-.col-sm-6 {width: 50%;}
-.col-sm-7 {width: 58.33%;}
-.col-sm-8 {width: 66.66%;}
-.col-sm-9 {width: 75%;}
-.col-sm-10 {width: 83.33%;}
-.col-sm-11 {width: 91.66%;}
-.col-sm-12 {width: 100%;}
-		}
-
-	</style>
-</head>
+	<title>Bootstrap navbar</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
 <body>
-	<h1> Cities </h1>
-	<div id="p1" class="col-lg-4 col-md-6 col-sm-12"><br><br>Originally a fishing village named Edo, the city became a prominent political center in 1603, when it became the seat of the Tokugawa shogunate. By the mid-18th century, Edo was one of the most populous cities in the world, with a population numbering more than one million. Following the end of the shogunate in 1868, the imperial capital in Kyoto was moved to the city, which was renamed Tokyo (literally "eastern capital"). Tokyo was devastated by the 1923 Great Kantō earthquake, and again by Allied bombing raids during World War II. Beginning in the 1950s, the city underwent rapid reconstruction and expansion, going on to lead Japan's post-war economic recovery. Since 1943, the Tokyo Metropolitan Government has administered the prefecture's 23 special wards. <section id="tok">Tokyo</section></div>
-	<div id="p2" class="col-lg-4 col-md-6 col-sm-12"><br><br> Paris is the capital and most populous city of France. The City of Paris is the centre and seat of government of the Île-de-France, or Paris Region, which has an estimated official 2020 population of 12,278,210, or about 18 percent of the population of France. The Paris Region had a GDP of €709 billion ($808 billion) in 2017. According to the Economist Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was the second most expensive city in the world, after Singapore, and ahead of Zürich, Hong Kong, Oslo and Geneva.Another source ranked Paris as most expensive, on a par with Singapore and Hong Kong, in 2018. The city's top attraction is the Notre Dam Cathedral, National museum of natural history etc. The Eiffel tower is situated here.<section id="par">Paris</section></div>
-	<div id="p3" class="col-lg-4 col-md-12 col-sm-12"><br><br>Berlin is the capital and largest city of Germany. The city is known for its art scene modern landmarks like gold-colored,swoop-roofed Berliner Philharmonie,built in 1963. Among city's main topological features are many lakes in the western and southeastern boroughs formed by the Spree,Havel and Dahme rivers. Due to its location i European plain, Berlin is influenced by a temparature seasonal climate. about one-third of city's area is composed of forests, parks, gardens, rivers, canals and lakes. The city lies in the in the central German dialect area being a variant of the Lusatian-New Marchian dialects. Berlin has 3 world heritage sites Museum island;the palaces and parks of posdam and Berlin;and the Berlin Modernism housing Estates.<section id="ber">Berlin</section></div>
+<nav class="navbar navbar-dark bg-dark" id="nav">
+	<a href="#" class="navbar-brand" left-margin="10">Food, LLC.</a>
 
-</body>
+   <button type="button" class="navbar-toggler d-md-none" data-toggle="collapse" data-target="#myMenu">
+   	<span class="navbar-toggler-icon"></span>
+
+   </button>
+
+  <div class="collapse navbar-collapse" id="myMenu">
+  	   <ul class="navbar-nav ml-auto">
+
+
+   	<li class="nav-item" id="m1"><a href="#chicken" class="nav-link text-center" id="drop">Chicken</a></li>
+   	<li class="nav-item"><a href="#beef" class="nav-link text-center" id="drop">Beef</a></li>
+   	<li class="nav-item"><a href="#sushi" class="nav-link text-center"id="drop">Sushi</a></li>
+   </ul>
 </div>
+</nav>
+<h1 class="text-center display-3" id="menu">Our Menu</h1>
+<div class="container-fluid">
+
+<div class="main" id="chicken">
+	<h3 class="text-center">Chicken</h3>
+	<p id="para">
+		Chicken is the most common type of poultry in the world.[1] Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has been variously adapted to regional tastes.
+
+Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, among many others, depending on its purpose. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat.[2]
+
+The poultry farming industry that accounts for chicken production takes on a range of forms across different parts of the world. In developed countries, chickens are typically subject to intensive farming methods, while less-developed areas raise chickens using more traditional farming techniques. The United Nations estimates there to be 19 billion chickens on Earth today, making them outnumber humans more than two to one.[3]Chicken is the most common type of poultry in the world.[1] Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has been variously adapted to regional tastes.
+
+Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying, and boiling, among many others, depending on its purpose. Since the latter half of the 20th century, prepared chicken has become a staple of fast food. Chicken is sometimes cited as being more healthful than red meat, with lower concentrations of cholesterol and saturated fat.[2]
+
+The poultry farming industry that accounts for chicken production takes on a range of forms across different parts of the world. In developed countries, chickens are typically subject to intensive farming methods, while less-developed areas raise chickens using more traditional farming techniques. The United Nations estimates there to be 19 billion chickens on Earth today, making them outnumber humans more than two to one.[3]Chicken meat contains about two to three times as much polyunsaturated fat as most types of red meat when measured as weight percentage.[18]
+
+Chicken generally includes low fat in the meat itself (castrated roosters excluded). The fat is highly concentrated on the skin. A 100g serving of baked chicken breast contains 4 grams of fat and 31 grams of protein, compared to 10 grams of fat and 27 grams of protein for the same portion of broiled, lean skirt steak.[19][20]
+
+Use of Roxarsone in chicken production
+In factory farming, chickens are routinely administered with the feed additive Roxarsone, an organoarsenic compound which partially decomposes into inorganic arsenic compounded in the flesh of chickens, and in their feces, which are often used as a fertilizer.[21] The compound is used to control stomach pathogens and promote growth. In a 2013 sample conducted by the Johns Hopkins School of Public Health of chicken meat from poultry producers that did not prohibit roxarsone, 70% of the samples in the US had levels which exceeded the safety limits as set by the FDA.[22] The FDA has since revised its stance on safe limits to inorganic arsenic in animal feed by stating that "any new animal drug that contributes to the overall inorganic arsenic burden is of potential concern".[23]
+
+Antibiotic resistance
+Information obtained by the Canadian Integrated Program for Antimicrobial Resistance (CIPARS) "strongly indicates that cephalosporin resistance in humans is moving in lockstep with the use of the drug in poultry production". According to the Canadian Medical Association Journal, the unapproved antibiotic ceftiofur is routinely injected into eggs in Quebec and Ontario to discourage infection of hatchlings. Although the data are contested by the industry, antibiotic resistance in humans appears to be directly related to the antibiotic's use in eggs.[24]
+
+A recent study by the Translational Genomics Research Institute showed that nearly half (47%) of the meat and poultry in US grocery stores was contaminated with S. aureus, with more than half (52%) of those bacteria resistant to antibiotics.[25] Furthermore, as per the FDA, more than 25% of retail chicken is resistant to 5 or more different classes of antibiotic treatment drugs in the United States.[26] An estimated 90–100% of conventional chicken contains, at least, one form of antibiotic resistance microorganism, while organic chicken has been found to have a lower incidence at 84%.[27][28]
+
+Fecal matter contamination
+In random surveys of chicken products across the United States in 2012, the Physicians Committee for Responsible Medicine found 48% of samples to contain fecal matter. On most commercial chicken farms, the chickens spend their entire life standing in, lying on, and living in their own manure, which is somewhat mixed in with the bedding material (e.g. sawdust, wood shavings, chopped straw, etc.).
+
+	</p>
+	<div><a href="#nav" class="text-center"><h5>Back to top</h5></a></div>
+</div>
+<div class="main2" id="beef">
+	<h3 class="text-center">Beef</h3>
+	<p id="para">
+        Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of protein and nutrients.[2]
+
+Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is,[3] but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock. Meat from younger cows (calves) is called veal.
+
+Beef from steers and heifers is similar.[4] Depending on economics, the number of heifers kept for breeding varies. The meat from older bulls, because it is usually tougher, is frequently used for mince (known as ground beef in the United States). Cattle raised for beef may be allowed to roam free on grasslands, or may be confined at some stage in pens as part of a large feeding operation called a feedlot (or concentrated animal feeding operation), where they are usually fed a ration of grain, protein, roughage and a vitamin/mineral preblend.
+
+Beef is the third most widely consumed meat in the world, accounting for about 25% of meat production worldwide, after pork and poultry at 38% and 30% respectively.[5] In absolute numbers, the United States, Brazil, and the People's Republic of China are the world's three largest consumers of beef; Uruguay, however, has the highest beef and veal consumption per capita, followed by Argentina and Brazil. According to the data from OECD, the average Uruguayan ate over 42 kg (93 lb) of beef or veal in 2014, representing the highest beef/veal consumption per capita in the world. In comparison, the average American consumed only about 24 kg (53 lb) beef or veal in the same year, while African countries, such as Mozambique, Ghana, and Nigeria, consumed the least beef or veal per capita.
+
+In 2018, the United States, Brazil, and China produced the most beef with 12.22 million tons, 9.9 million tons, and 6.46 million tons respectively.[6] The top 3 beef exporting countries in 2019 were Australia (14.8% of total exports), the United States (13.4% of total exports), and Brazil (12.6% of total exports).[7] Beef production is also important to the economies of Japan, Argentina, Uruguay, Canada, Paraguay, Mexico, Belarus and Nicaragua.
+
+Beef production has a high environmental impact 
+People have eaten the flesh of bovines from prehistoric times; some of the earliest known cave paintings, such as those of Lascaux, show aurochs in hunting scenes. People domesticated cattle to provide ready access to beef, milk, and leather.[14] Cattle have been domesticated at least twice over the course of evolutionary history. The first domestication event occurred around 10,500 years ago with the evolution of Bos taurus. The second was more recent, around 7,000 years ago, with the evolution of Bos indicus in the Indus Valley. There is a possible third domestication even 8,500 years ago, with a potential third species Bos africanus arising in Africa. [15] Most cattle originated in the Old World, with the exception of bison hybrids, which originated in the Americas. Examples include the Wagyū from Japan, Ankole-Watusi from Egypt, and longhorn Zebu from the Indian subcontinent.[16]
+
+It is unknown exactly when people started cooking beef. Cattle were widely used across the Old World as draft animals (oxen), for milk, or specifically for human consumption. With the mechanization of farming, some breeds were specifically bred to increase meat yield, resulting in Chianina and Charolais cattle, or to improve the texture of meat, giving rise to the Murray Grey, Angus, and Wagyū. Some breeds have been selected for both meat and milk production, such as the Brown Swiss (Braunvieh).
+
+In the United States, the growth of the beef business was largely due to expansion in the Southwest. Upon the acquisition of grasslands through the Mexican–American War of 1848, and later the expulsion of the Plains Indians from this region and the Midwest, the American livestock industry began, starting primarily with the taming of wild longhorn cattle. Chicago and New York City were the first to benefit from these developments in their stockyards and in their meat markets.[17]
+
+	</p>
+	<div><a href="#nav" class="text-center"><h5>Back to top</h5></a></div>
+
+</div>
+<div class="main3" id="sushi">
+	<h3 class="text-center">Sushi</h3>
+	<p id="para">
+         Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients (ネタ, neta), such as seafood, often raw, vegetables, and occasionally tropical fruits. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari (しゃり), or sumeshi (酢飯).[1]
+
+Sushi is traditionally made with medium-grain white rice, though it can be prepared with brown rice or short-grain rice. It is very often prepared with seafood, such as squid, eel, yellowtail, salmon, tuna or imitation crab meat. Many types of sushi are vegetarian. It is often served with pickled ginger (gari), wasabi, and soy sauce. Daikon radish or pickled daikon (takuan) are popular garnishes for the dish.
+
+Sushi is sometimes confused with sashimi, a related dish in Japanese cuisine that consists of thinly sliced raw fish, or occasionally meat, and an optional serving of rice.
+Sushi originates in a Southeast Asian dish, known as narezush, stored in fermented rice for possibly months at a time. The lacto-fermentation of the rice prevented the fish from spoiling;[3] the rice would be discarded before consumption of the fish.[4] This early type of sushi became an important source of protein for its Japanese consumers. The term sushi literally means "sour-tasting" and comes from an antiquated し (shi) terminal-form conjugation, sushi, no longer used in other contexts, of the adjectival verb the overall dish has a sour and umami or savoury taste.[6] Narezushi still exists as a regional specialty, notably as funa-zushi from Shiga Prefecture Vinegar began to be added to the preparation of narezushi in the Muromachi period (1336–1573) for the sake of enhancing both taste and preservation. In addition to increasing the sourness of the rice, the vinegar significantly increased the dish's longevity, causing the fermentation process to be shortened and eventually abandoned. The primitive sushi would be further developed in Osaka, where over several centuries it became oshi-zushi or "hako-zushi"; in this preparation, the seafood and rice were pressed into shape with wooden (typically bamboo) molds.
+
+It was not until the Edo period (1603–1868) that fresh fish was served over vinegared rice and nori. The particular style of today's nigirizushi became popular in Edo (contemporary Tokyo) in the 1820s or 1830s. One common story of nigirizushi's origins is of the chef Hanaya Yohei (1799–1858), who invented or perfected the technique in 1824 at his shop in Ryōgoku.[7] The dish was originally termed Edomae zushi as it used freshly caught fish from the Edo-mae (Edo or Tokyo Bay); the term Edomae nigirizushi is still used today as a by-word for quality sushi, regardless of its ingredients' origins.
+
+The earliest written mention of sushi in English described in the Oxford English Dictionary is in an 1893 book, A Japanese Interior, where it mentions sushi as "a roll of cold rice with fish, sea-weed, or some other flavoring".[10][11] There is an earlier mention of sushi in James Hepburn's Japanese-English dictionary from 1873,[12] and an 1879 article on Japanese cookery in the journal Notes and Queries.
+Traditionally, sushi is served on minimalist Japanese-style, geometric, mono- or duo-tone wood or lacquer plates, in keeping with the aesthetic qualities of this cuisine.[citation needed]
+
+Many sushi restaurants offer fixed-price sets, selected by the chef from the catch of the day. These are often graded as shō-chiku-bai (松竹梅), shō/matsu (松, pine), chiku/take (竹, bamboo) and bai/ume (梅, plum), with matsu the most expensive and ume the cheapest.[citation needed] Sushi restaurants will often have private booth dining, where guests are asked to remove their shoes, leaving them outside the room; However, most sushi bars offer diners a casual experience with an open dining room concept.
+
+
+Meat sushi
+Sushi may be served kaiten zushi (sushi train) style. Color-coded plates of sushi are placed on a conveyor belt; as the belt passes, customers choose as they please. After finishing, the bill is tallied by counting how many plates of each color have been taken. Newer kaiten zushi restaurants use barcodes or RFID tags embedded in the dishes to manage elapsed time after the item was prepared.
+Futomaki is a more popular variation of sushi within the United States, and comes in variations that take their names from their places of origin. Other rolls may include a variety of ingredients, including chopped scallops, spicy tuna, beef or chicken teriyaki roll, okra, and assorted vegetables such as cucumber and avocado, and the tempura roll, where shrimp tempura is inside the roll or the entire roll is battered and fried tempura-style. In the Southern United States, many sushi restaurants prepare rolls using crawfish.
+
+	</p>
+	<div><a href="#nav" class="text-center"><h5>Back to top</h5></a></div>
+
+	</div>
+   </div>
+ <script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html> 
